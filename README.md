@@ -1,10 +1,10 @@
 # Hack_for_GreenBharat
-GreenFactory AI
+MachineIQ
 
 Real-Time Industrial Sustainability Monitoring System
 1. Project Overview
 
-GreenFactory AI is a real-time industrial monitoring system that:
+MachineIQ is a real-time industrial monitoring system that:
 
 Reads live machine sensor data
 
@@ -21,7 +21,8 @@ Two implementations are included:
 app_simmulation.py → Simulation-based system
 
 app_sensors based.py → Real sensor-based system
-2. Technology Stack
+_________________________________________________________________________
+  2. Technology Stack
 Hardware
 
 Raspberry Pi 4
@@ -67,7 +68,8 @@ Efficiency calculation
 Status classification (Normal / Warning / Critical)
 
 Streamlit displays real-time metrics and alerts
-4. Efficiency Calculation Logic
+_____________________________________________________________________________________________________________
+3. Efficiency Calculation Logic
 base = output / energy
 
 Efficiency =
@@ -82,7 +84,8 @@ Efficiency < 60 → CRITICAL
 60–75 → WARNING
 
 75 → NORMAL
-5. Pathway Processing Layer
+_______________________________________________________________________________________________
+4. Pathway Processing Layer
 Schema Definition
 class MachineSchema(pw.Schema):
     timestamp: float
@@ -100,7 +103,8 @@ pw.apply() used for efficiency calculation
 Status derived from threshold logic
 
 pw.run() executes streaming engine
-6. Simulation Version (app.py)
+_________________________________________________________________________________________________________
+5. Simulation Version (app.py)
 
 Generates synthetic data for 10 machines
 
@@ -117,7 +121,8 @@ Efficiency graph
 Used for demo without hardware
 
 Run:streamlit run app.py
-7. Sensor-Based Version (app_sensors based.py)
+____________________________________________________________________________________________________
+6. Sensor-Based Version (app_sensors based.py)
 
 Requirements:
 
@@ -129,13 +134,15 @@ GPIO enabled
 
 Run:streamlit run greenfactory_pathway.py
 access : http://<raspberry-pi-ip>:8501
-8. Project Structure
+_______________________________________________________________________________________________________
+7. Project Structure
 GreenFactory-AI/
 │
 ├── app_simmulation.py
 ├── app_sensirs based.py
 └── README.md
-9. Scalability
+__________________________________________________________________________________________________________
+8. Scalability
 
 The system supports:
 
@@ -146,7 +153,8 @@ Edge deployment on Raspberry Pi
 Real-time stream processing
 
 Cloud extension capability
-10. Limitations
+___________________________________________________________________________________________________________
+9. Limitations
 
 Energy sensor requires ADC calibration
 
