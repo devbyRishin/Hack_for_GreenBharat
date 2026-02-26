@@ -176,11 +176,12 @@ while True:
     time.sleep(3)
 
 from pyngrok import ngrok
-ngrok.set_auth_token("30TiUFToqhiBM0V1MAlw7UO4mRW_RgXBEMazkJZGyYgz22tj")
+ngrok.set_auth_token("NGROCK_TOKEN")
 
 from pyngrok import ngrok
 ngrok.kill()
 
 !streamlit run app.py &>/dev/null &
 public_url = ngrok.connect(8501)
+
 print("🚀 Public URL:", public_url)
